@@ -15,6 +15,7 @@ gulp.task('scss', function () {
     gulp.src(['assets/scss/**/*.scss', "!assets/scss/**/*.min.scss"])
     .pipe(rename({suffix:".min"}))
     .pipe(sass().on('error', sass.logError))
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(gulp.dest('./assets/css'));
   });
 
