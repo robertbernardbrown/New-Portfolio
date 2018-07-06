@@ -1,36 +1,23 @@
 {
-  "name": "new-portfolio",
+  "name": "mern",
   "version": "1.0.0",
-  "description": "Remixing my portfolio",
-  "main": "index.js",
+  "description": "Mern Demo",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "server": "node server.js",
+    "client": "cd client && npm run start",
+    "start": "./node_modules/.bin/concurrently \"./node_modules/.bin/nodemon\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/robertbernardbrown/New-Portfolio.git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/robertbernardbrown/New-Portfolio/issues"
-  },
-  "homepage": "https://github.com/robertbernardbrown/New-Portfolio#readme",
   "devDependencies": {
-    "browser-sync": "^2.23.6",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-compass": "^2.1.0",
-    "gulp-plumber": "^1.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.2.1",
-    "gulp-uglify": "^3.0.0"
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0"
   },
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3",
-    "path": "^0.12.7"
+    "express": "^4.15.4"
   }
 }

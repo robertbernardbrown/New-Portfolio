@@ -1,18 +1,19 @@
-const express    = require("express");
-const bodyParser = require("body-parser");
-const path       = require("path");
-
+const express = require("express");
+const path = require("path");
+const PORT = process.env.PORT || 3001;
 const app = express();
-const port = process.env.PORT || 8080;
 
-//LOAD MIDDLEWARE (BODYPARSER & EXPRESS STATIC DIRECTORY)
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname + "/assets")));
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 
-// require("./app/routing/apiRoutes")(app);
-require("./routing/htmlRoutes")(app);
+// Send every request to the React app
+// Define any API routes before this runs
+app.get("*", function(req, res) {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 
-app.listen(port, function() {
-  console.log("App is running on port " + port);
+app.listen(PORT, function() {
+  console.log(`🌎 ==> Server now on port ${PORT}!`);
 });
