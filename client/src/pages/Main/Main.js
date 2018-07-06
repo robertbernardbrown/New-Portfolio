@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./Main.css";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+import NavbarComp from "../../components/Navbar/Navbar";
+import About from "../../components/About/About";
 
 
 class Main extends Component{
@@ -14,15 +16,12 @@ class Main extends Component{
     render(){
         return(
             <div>
+                <NavbarComp/>
                 <div className="container">
                     <Header/>
-                    <div className="jumbotron header-div outline-red">
-                        <div className="container">
-                            <h1 className="header-text text-center">CONTENT</h1>
-                        </div>
-                    </div>
+                    <About/>
                 </div>
-                    <Footer/>
+                <Footer/>
             </div>
 
         )

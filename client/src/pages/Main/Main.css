@@ -5,3 +5,30 @@
 .outline-green {
     border: 2px solid green
 }
+
+#jumbo-div {
+    background-color: transparent;
+}
+
+/* HEADER */
+.container a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-div {
+    text-align: center;
+}
+
+/* FOOTER */
+.footer {
+    min-height: 100px;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+.container {
+text-align: center
+}
