@@ -6,6 +6,9 @@ const Portfolio = (props) => (
             <div className="jumbotron header-div outline-red" key={i}>
                 <div className="container">
                     <p>{cur.title}</p>
+                    <p>{cur.description}</p>
+                    <p>{cur.technology}</p>
+                    <p>{cur.picture}</p>
                 </div>
             </div>
         ))}
