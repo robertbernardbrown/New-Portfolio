@@ -5,7 +5,11 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import NavbarComp from "../../components/Navbar/Navbar";
 import About from "../../components/About/About";
+import Contact from "../../components/Contact/Contact";
+import Portfolio from "../../components/Portfolio/Portfolio";
+import projects from "../../utils/projects";
 
+console.log(projects);
 
 class Main extends Component{
 
@@ -20,6 +24,8 @@ class Main extends Component{
                 <div className="container">
                     <Header/>
                     <About/>
+                    <Portfolio projects={projects}/>
+                    <Contact/>
                 </div>
                 <Footer/>
             </div>
