@@ -37,3 +37,9 @@
 .container {
     text-align: center
 }
+
+/* NAVBAR */
+.icons {
+    float: left;
+    border: 2px solid green
+}

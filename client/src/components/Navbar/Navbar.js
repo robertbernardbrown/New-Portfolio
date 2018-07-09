@@ -29,7 +29,10 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Home</NavbarBrand>
+          <FontAwesomeIcon size="lg" icon={['fab', 'facebook']} />
+          <FontAwesomeIcon size="lg" icon={['fab', 'linkedin']} />
+          <FontAwesomeIcon size="lg" icon={['fab', 'github']} />
+          <FontAwesomeIcon size="lg" icon={['fab', 'instagram']} />
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -45,7 +48,7 @@ export default class Example extends React.Component {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    <FontAwesomeIcon icon="coffee" />
+                    Option 1
                   </DropdownItem>
                   <DropdownItem>
                     Option 2
