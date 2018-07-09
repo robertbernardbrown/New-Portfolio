@@ -18,6 +18,8 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.1.0",
+    "body-parser": "^1.18.3",
     "express": "^4.15.4"
   }
 }
