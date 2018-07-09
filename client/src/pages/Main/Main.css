@@ -40,6 +40,10 @@
 
 /* NAVBAR */
 .icons {
-    float: left;
-    border: 2px solid green
+    min-width: 15%;
+}
+
+#icon-div {
+    display: flex;
+    flex-grow: 1;
 }

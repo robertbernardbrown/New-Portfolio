@@ -29,10 +29,20 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <FontAwesomeIcon size="lg" icon={['fab', 'facebook']} />
-          <FontAwesomeIcon size="lg" icon={['fab', 'linkedin']} />
-          <FontAwesomeIcon size="lg" icon={['fab', 'github']} />
-          <FontAwesomeIcon size="lg" icon={['fab', 'instagram']} />
+          <div id="icon-div">
+            <div className="icons">
+              <FontAwesomeIcon className="icons" size="lg" icon={['fab', 'facebook']} />
+            </div>
+            <div className="icons">
+              <FontAwesomeIcon className="icons" size="lg" icon={['fab', 'linkedin']} />
+            </div>
+            <div className="icons">
+              <FontAwesomeIcon className="icons" size="lg" icon={['fab', 'github']} />
+            </div>
+            <div className="icons">
+              <FontAwesomeIcon className="icons" size="lg" icon={['fab', 'instagram']} />
+            </div>
+          </div>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
