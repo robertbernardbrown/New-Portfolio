@@ -29,7 +29,7 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <div id="icon-div">
+          <div id="icon-container">
             <div className="icons">
               <FontAwesomeIcon className="icons" size="lg" icon={['fab', 'facebook']} />
             </div>
