@@ -48,3 +48,26 @@
     display: flex;
     justify-content: space-around
 }
+
+/* ABOUT */
+.list-icon {
+    font-size: 2em;
+}
+
+.icon-list-item {
+    line-height: 40px;
+    text-align: center;
+    margin-left: 1em;
+}
+
+#flex-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    display: inline-block;
+
+}
+
+#icon-ul-div {
+    text-align: center;
+}
