@@ -7,13 +7,13 @@ const About = () => (
         </div>
         <div className="container">
             <p>Here are some of my skills:</p>
-            <ul>
-                <li>MongoDB</li>
-                <li>Express.js</li>
-                <li>React</li>
-                <li>Node</li>
-                <li>MySQL</li>
-                <li>Python</li>
+            <ul className="fa-ul">
+                <li><i className="fa-li fa icon-mongodb"></i>MongoDB</li>
+                <li><i className="fa-li fa icon-reactjs"></i>React</li>
+                <li><i className="fa-li fa icon-nodejs"></i>Node</li>
+                <li><i className="fa-li fa icon-mysql-alt"></i>MySQL</li>
+                <li><i className="fa-li fa icon-python"></i>Python</li>
+                <li><i className="fa-li fa icon-javascript-alt"></i>Vanilla JS</li>
                 <li>Digital Marketing</li>
             </ul>
         </div>
