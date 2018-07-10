@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardTitle, CardText, CardImg, CardImgOverlay, CardColumns } from 'reactstrap';
 
 const Portfolio = (props) => (
-    <div className="portfolio">
+    <div className="portfolio" id="portfolio">
         <CardColumns>
         {props.projects.map((cur, i) => (
             <Card inverse key={i}>
