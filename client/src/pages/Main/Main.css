@@ -37,3 +37,14 @@
 .container {
     text-align: center
 }
+
+/* NAVBAR */
+.icons {
+    
+}
+
+#icon-container {
+    width: 33%;
+    display: flex;
+    justify-content: space-around
+}
