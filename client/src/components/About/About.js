@@ -2,6 +2,7 @@ import React from "react";
 
 const About = () => (
     <div className="jumbotron header-div" id="about">
+        <h1>About Me</h1>
         <div className="container about-me">
             <p>Hi there! My name is Bob Brown. I'm a fullstack developer looking for my next big challenge in frontend and backend design.</p>
         </div>
