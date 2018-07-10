@@ -10,10 +10,9 @@
     background-color: transparent;
 }
 
-/* MAIN */
-/* .card {
-    max-width: 33.33%;
-} */
+.container {
+    text-align: center
+}
 
 /* HEADER */
 #header-container a {
@@ -26,16 +25,20 @@
 }
 
 /* FOOTER */
-.footer {
+#footer {
     min-height: 100px;
     margin-top: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
-  }
-  
-.container {
-    text-align: center
+    background: #232323
+}
+
+#footer-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* NAVBAR */

@@ -1,11 +1,11 @@
 import React from "react";
 
 const Footer = () => (
-    <footer className="footer" id="footer">
-        <div className="container">
-            <div className="text-muted footer-block">BobBrown©2017</div>
+    <footer id="footer">
+        <div className="container" id="footer-div">
+            <div className="text-muted footer-text">BobBrown©2017</div>
         </div>
-    </footer>
+    </footer> 
 )
 
 export default Footer;
