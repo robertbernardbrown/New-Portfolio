@@ -44,7 +44,7 @@
 }
 
 #icon-container {
-    width: 33%;
+    width: 180px;
     display: flex;
     justify-content: space-around
 }
