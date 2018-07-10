@@ -16,7 +16,7 @@
 } */
 
 /* HEADER */
-.container a {
+#header-container a {
     text-decoration: none;
     color: black;
 }
