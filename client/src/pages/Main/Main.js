@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Main.css";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import NavbarComp from "../../components/Navbar/Navbar";
+// import NavbarComp from "../../components/Navbar/Navbar";
 import About from "../../components/About/About";
 import Contact from "../../components/Contact/Contact";
 import Portfolio from "../../components/Portfolio/Portfolio";
@@ -20,7 +20,6 @@ class Main extends Component{
     render(){
         return(
             <div className="site-container">
-                <NavbarComp/>
                     <Header/>
                 <div className="container">
                     <About/>

@@ -39,6 +39,12 @@ body, html {
     align-items: center;
 }
 
+.navbar {
+    position: absolute;
+    top:0;
+    width: 100%
+}
+
 /* HEADER */
 #header-container a {
     text-decoration: none;
