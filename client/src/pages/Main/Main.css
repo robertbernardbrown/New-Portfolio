@@ -41,7 +41,6 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /* margin-bottom: 2rem; */
     position: relative;
     display: flex;
     justify-content: center;
@@ -80,7 +79,6 @@ body, html {
 /* FOOTER */
 #footer {
     min-height: 100px;
-    /* margin-top: 20px; */
     position: relative;
     bottom: 0;
     width: 100%;
