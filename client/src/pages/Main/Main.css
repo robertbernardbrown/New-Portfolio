@@ -1,3 +1,13 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.site-container {
+    height: 100%;
+    margin: 0;
+}
+
 .outline-red {
     border: 2px solid red
 }
@@ -14,6 +24,21 @@
     text-align: center
 }
 
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* HEADER */
 #header-container a {
     text-decoration: none;
@@ -22,6 +47,11 @@
 
 .header-div {
     text-align: center;
+}
+
+.header-text {
+    font-size: 5em;
+    color: white
 }
 
 /* FOOTER */

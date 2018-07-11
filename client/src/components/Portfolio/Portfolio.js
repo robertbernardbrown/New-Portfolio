@@ -6,8 +6,8 @@ const Portfolio = (props) => (
         <h1>Portfolio</h1>
         <CardColumns>
         {props.projects.map((cur, i) => (
-            <div className="portfolio-container">
-                <Card inverse key={i}>
+            <div className="portfolio-container" key={i}>
+                <Card inverse>
                     <CardImg width="100%" src={cur.picture} alt="Card image cap"/>
                         <CardImgOverlay>
                             <CardTitle className="portfolio-title">{cur.title}</CardTitle>

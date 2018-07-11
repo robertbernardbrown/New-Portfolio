@@ -24,7 +24,7 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
+        <Navbar color="#00FFFFFF" light expand="md">
           <div id="icon-container">
             <div className="icons">
               <a href="https://www.facebook.com/robertbernardbrown" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon className="icons" size="lg" icon={['fab', 'facebook']} /></a>
