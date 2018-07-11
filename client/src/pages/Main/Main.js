@@ -20,12 +20,10 @@ class Main extends Component{
     render(){
         return(
             <div className="site-container">
-                    <Header/>
-                <div className="container">
-                    <About/>
-                    <Portfolio projects={projects}/>
-                    <Contact/>
-                </div>
+                <Header/>
+                <About/>
+                <Portfolio projects={projects}/>
+                {/* <Contact/> */}
                 <Footer/>
             </div>
 
