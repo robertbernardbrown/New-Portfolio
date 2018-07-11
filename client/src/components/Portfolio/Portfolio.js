@@ -6,15 +6,22 @@ const Portfolio = (props) => (
         <h1>Portfolio</h1>
         <CardColumns>
         {props.projects.map((cur, i) => (
-            <a href={cur.url} target="_blank" rel="noopener noreferrer" key={i}>
-                <Card inverse>
+            <div className="portfolio-container">
+                <Card inverse key={i}>
                     <CardImg width="100%" src={cur.picture} alt="Card image cap"/>
-                    <CardImgOverlay>
-                    <CardTitle>{cur.title}</CardTitle>
-                    <CardText>{cur.description}</CardText>
-                    </CardImgOverlay>
+                        <CardImgOverlay>
+                            <CardTitle className="portfolio-title">{cur.title}</CardTitle>
+                        </CardImgOverlay>
+                    <div className="portfolio-overlay">
+                        <CardImgOverlay>
+                            <div className="portfolio-overlay-info">
+                                <CardText>{cur.description}</CardText>
+                                <a href={cur.url} target="_blank" rel="noopener noreferrer"><button className="btn btn-primary">Visit Site</button></a>
+                            </div>
+                        </CardImgOverlay>
+                    </div>
                 </Card>
-            </a>
+            </div>
         ))}
         </CardColumns>
     </div>
