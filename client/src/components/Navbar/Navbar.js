@@ -24,22 +24,22 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="#00FFFFFF" light expand="md">
+        <Navbar dark expand="md">
           <div id="icon-container">
-            <div className="icons">
+            <div>
               <a href="https://www.facebook.com/robertbernardbrown" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon className="icons" size="lg" icon={['fab', 'facebook']} /></a>
             </div>
-            <div className="icons">
+            <div>
               <a href="https://www.linkedin.com/in/robert-bernard-brown/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon className="icons" size="lg" icon={['fab', 'linkedin']} /></a>
             </div>
-            <div className="icons">
+            <div>
               <a href="https://github.com/robertbernardbrown" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon className="icons" size="lg" icon={['fab', 'github']} /></a>
             </div>
-            <div className="icons">
+            <div>
               <a href="https://www.instagram.com/bob_brown_18/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon className="icons" size="lg" icon={['fab', 'instagram']} /></a>
             </div>
           </div>
-          <NavbarToggler onClick={this.toggle} />
+          <NavbarToggler onClick={this.toggle} color="text-white" />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>

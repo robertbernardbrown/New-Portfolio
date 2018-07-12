@@ -100,6 +100,22 @@ body, html {
     justify-content: space-around
 }
 
+.icons {
+    color: white
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    color: white
+}
+
+.nav-link {
+    color: white
+}
+
+.navbar .navbar-toggler .icon-bar {
+    background: white !important;
+}
+
 /* ABOUT */
 .list-icon {
     font-size: 2em;
