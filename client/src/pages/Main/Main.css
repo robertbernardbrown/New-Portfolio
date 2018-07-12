@@ -156,9 +156,11 @@ body, html {
     line-height: 40px;
     text-align: center;
     margin-left: 1em;
+    -webkit-transition-duration: 2s;
+    transition-duration: 2s;
 }
 
-#flex-list {
+#flexList {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -167,6 +169,14 @@ body, html {
 
 #icon-ul-div {
     text-align: center;
+}
+
+.left {
+    transform: translate(-355%)
+}
+
+.right {
+    transform: translate(355%)
 }
 
 /* PORTFOLIO */

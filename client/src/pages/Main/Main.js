@@ -9,6 +9,11 @@ import projects from "../../utils/projects";
 
 class Main extends Component{
 
+    state = {
+        left: "left",
+        right: "right"
+    }
+
     componentDidMount(){
         window.addEventListener('scroll', this.handleScroll);
     }
@@ -19,7 +24,12 @@ class Main extends Component{
 
     handleScroll = (e) => {
         const aboutHeight = e.target.body.clientHeight <= window.scrollY
+        console.log(aboutHeight);
         if (aboutHeight) {
+            this.setState({
+                left: "",
+                right: ""
+            })
             window.removeEventListener('scroll', this.handleScroll);
         }
     }
@@ -28,7 +38,7 @@ class Main extends Component{
         return(
             <div className="site-container">
                 <Header/>
-                <About onScroll={this.handleScroll}/>
+                <About onScroll={this.handleScroll} left={this.state.left} right={this.state.right}/>
                 <Portfolio projects={projects}/>
                 <Footer/>
             </div>
