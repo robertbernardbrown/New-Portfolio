@@ -27,7 +27,7 @@ class Main extends Component{
         console.log(aboutHeight);
         if (aboutHeight) {
             this.setState({
-                left: "",
+                left: "list-icon",
                 right: ""
             })
             window.removeEventListener('scroll', this.handleScroll);

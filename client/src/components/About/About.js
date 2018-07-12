@@ -12,15 +12,15 @@ const About = (props) => (
             <p>Here are some of my skills:</p>
             <div id="icon-ul-div">
                 <ul className="fa-ul" id="flexList">
-                    <li className={`icon-list-item ${props.left}`}> <div><i className="list-icon fa-li fa icon-mongodb"></i></div>        <div className={props.right}>MongoDB</div></li>
-                    <li className={`icon-list-item ${props.left}`}> <div><i className="list-icon fa-li fa icon-reactjs"></i></div>        <div className={props.right}>React</div></li>
-                    <li className={`icon-list-item ${props.left}`}> <div><i className="list-icon fa-li fa icon-nodejs"></i></div>         <div className={props.right}>Node</div></li>
-                    <li className={`icon-list-item ${props.left}`}> <div><i className="list-icon fa-li fa icon-mysql-alt"></i></div>      <div className={props.right}>MySQL</div></li>
-                    <li className={`icon-list-item ${props.left}`}> <div><i className="list-icon fa-li fa icon-python"></i></div>         <div className={props.right}>Python</div></li>
-                    <li className={`icon-list-item ${props.left}`}> <div><i className="list-icon fa-li fa icon-javascript-alt"></i></div> <div className={props.right}>Vanilla JS</div></li>
-                    <li className={`icon-list-item ${props.left}`}> <div><i className="list-icon fa-li fa icon-bootstrap"></i></div>      <div className={props.right}>Bootstrap</div></li>
-                    <li className={`icon-list-item ${props.left}`}> <div><i className="list-icon fa-li fa icon-jquery"></i></div>         <div className={props.right}>jQuery</div></li>
-                    <li className={`icon-list-item ${props.left}`}> <div><i className="list-icon fa-li fa icon-line-graph"></i></div>     <div className={props.right}>Digital Marketing</div></li>
+                    <li> <i className={`icon-list-item fa-li fa ${props.left} icon-mongodb`}       ></i>  <div className={`icon-list-item ${props.right}`}> MongoDB          </div></li>
+                    <li> <i className={`icon-list-item fa-li fa ${props.left} icon-reactjs`}      ></i>  <div className={`icon-list-item ${props.right}`}> React            </div></li>
+                    <li> <i className={`icon-list-item fa-li fa ${props.left} icon-nodejs`}        ></i>  <div className={`icon-list-item ${props.right}`}> Node             </div></li>
+                    <li> <i className={`icon-list-item fa-li fa ${props.left} icon-mysql-alt`}     ></i>  <div className={`icon-list-item ${props.right}`}> MySQL            </div></li>
+                    <li> <i className={`icon-list-item fa-li fa ${props.left} icon-python`}        ></i>  <div className={`icon-list-item ${props.right}`}> Python           </div></li>
+                    <li> <i className={`icon-list-item fa-li fa ${props.left} icon-javascript-alt`}></i>  <div className={`icon-list-item ${props.right}`}> Vanilla JS       </div></li>
+                    <li> <i className={`icon-list-item fa-li fa ${props.left} icon-bootstrap`}     ></i>  <div className={`icon-list-item ${props.right}`}> Bootstrap        </div></li>
+                    <li> <i className={`icon-list-item fa-li fa ${props.left} icon-jquery`}        ></i>  <div className={`icon-list-item ${props.right}`}> jQuery           </div></li>
+                    <li> <i className={`icon-list-item fa-li fa ${props.left} icon-line-graph`}    ></i>  <div className={`icon-list-item ${props.right}`}> Digital Marketing</div></li>
                 </ul>
             </div>
         </div>

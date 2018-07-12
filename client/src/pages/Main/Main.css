@@ -172,11 +172,11 @@ body, html {
 }
 
 .left {
-    transform: translate(-355%)
+    transform: translate(-900px)
 }
 
 .right {
-    transform: translate(355%)
+    transform: translate(900px)
 }
 
 /* PORTFOLIO */
