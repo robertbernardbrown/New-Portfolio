@@ -119,6 +119,22 @@ body, html {
 /* ABOUT */
 .list-icon {
     font-size: 2em;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {font-size: 2em;}
+    to {font-size: 4em;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {font-size: 2em;}
+    to {font-size: 4em;}
 }
 
 .icon-list-item {
@@ -132,7 +148,6 @@ body, html {
     justify-content: center;
     flex-direction: column;
     display: inline-block;
-
 }
 
 #icon-ul-div {

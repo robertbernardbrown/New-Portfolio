@@ -2,9 +2,10 @@ import React from "react";
 
 const About = () => (
     <div className="header-div hero" id="about">
-        <h1>About Me</h1>
         <div className="container about-me">
-            <p>Hi there! My name is Bob Brown. I'm a fullstack developer looking for my next big challenge in frontend and backend design.</p>
+            <h1>Hi there!</h1> 
+            <p>Apologies if you were looking for <a href="https://en.wikipedia.org/wiki/Bobby_Brown" target="_blank">Bobby Brown</a> (of New Edition fame) or <a href="https://en.wikipedia.org/wiki/Robert_Brown_(botanist,_born_1773)" target="_blank">Robert Brown</a> (reknowned botanist), but I'm not your guy.</p>
+            <p>However, if you're looking or a fullstack developer I'm totally your guy.</p>
         </div>
         <div className="container">
             <p>Here are some of my skills:</p>
