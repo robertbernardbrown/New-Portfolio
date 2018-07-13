@@ -179,6 +179,10 @@ body, html {
     transform: translate(900px)
 }
 
+.tooltip-img {
+    width: 100%
+}
+
 /* PORTFOLIO */
 
 .portfolio-title {
