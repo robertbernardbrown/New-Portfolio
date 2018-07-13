@@ -53,6 +53,12 @@ body, html {
     width: 100%
 }
 
+@media (max-width: 576px) {
+    .hero {
+        margin-bottom: 80px;
+    }
+}
+
 /* HEADER */
 #header-container a {
     text-decoration: none;
@@ -119,31 +125,42 @@ body, html {
 /* ABOUT */
 .list-icon {
     font-size: 2em;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
-    animation-duration: 4s;
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-    from {font-size: 2em;}
-    to {font-size: 4em;}
+.list-icon:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
 }
+  
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
 
-/* Standard syntax */
-@keyframes example {
-    from {font-size: 2em;}
-    to {font-size: 4em;}
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
 }
 
 .icon-list-item {
     line-height: 40px;
     text-align: center;
     margin-left: 1em;
+    -webkit-transition-duration: 1.5s;
+    transition-duration: 1.5s;
 }
 
-#flex-list {
+#flexList {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -152,6 +169,14 @@ body, html {
 
 #icon-ul-div {
     text-align: center;
+}
+
+.left {
+    transform: translate(-900px)
+}
+
+.right {
+    transform: translate(900px)
 }
 
 /* PORTFOLIO */
