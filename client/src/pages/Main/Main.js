@@ -11,8 +11,7 @@ import iconList from "../../utils/iconList";
 class Main extends Component{
 
     state = {
-        left: "left",
-        right: "right"
+        show: false
     }
 
     componentDidMount(){
@@ -28,8 +27,7 @@ class Main extends Component{
         console.log(aboutHeight);
         if (aboutHeight) {
             this.setState({
-                left: "list-icon",
-                right: ""
+                show: true
             })
             window.removeEventListener('scroll', this.handleScroll);
         }
@@ -39,7 +37,7 @@ class Main extends Component{
         return(
             <div className="site-container">
                 <Header/>
-                <About onScroll={this.handleScroll} left={this.state.left} right={this.state.right} iconList={iconList}/>
+                <About onScroll={this.handleScroll} show={this.state.show} left={this.state.left} right={this.state.right} iconList={iconList}/>
                 <Portfolio projects={projects}/>
                 <Footer/>
             </div>

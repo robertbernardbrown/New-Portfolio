@@ -1,4 +1,5 @@
 import React from "react";
+import AboutIcons from "./AboutIcons/AboutIcons";
 
 const About = (props) => (
     <div className="header-div hero" id="about">
@@ -12,9 +13,12 @@ const About = (props) => (
             <p>Here are some of my skills:</p>
             <div id="icon-ul-div">
                 <ul className="fa-ul" id="flexList">
-                    {props.iconList.map((cur, i) => (
-                        <li key={i}> <i className={`icon-list-item fa-li fa ${props.left} ${cur.icon}`}></i><div className={`icon-list-item ${props.right}`}> {cur.iconName}</div></li>
-                    ))}
+                    {props.show ? props.iconList.map((cur, i) => (
+                        <AboutIcons key={i} wait={i * 300} iconList={props.iconList} icon={cur.icon} iconName={cur.iconName}/>
+                        // <li key={i}> <i className={`icon-list-item fa-li fa ${props.left} ${cur.icon}`}></i><div className={`icon-list-item ${props.right}`}> {cur.iconName}</div></li>
+                    )):
+                    <div></div>
+                }
                 </ul>
             </div>
         </div>
