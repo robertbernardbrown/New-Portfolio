@@ -6,6 +6,7 @@ import Footer from "../../components/Footer/Footer";
 import About from "../../components/About/About";
 import Portfolio from "../../components/Portfolio/Portfolio";
 import projects from "../../utils/projects";
+import iconList from "../../utils/iconList";
 
 class Main extends Component{
 
@@ -38,7 +39,7 @@ class Main extends Component{
         return(
             <div className="site-container">
                 <Header/>
-                <About onScroll={this.handleScroll} left={this.state.left} right={this.state.right}/>
+                <About onScroll={this.handleScroll} left={this.state.left} right={this.state.right} iconList={iconList}/>
                 <Portfolio projects={projects}/>
                 <Footer/>
             </div>

@@ -8,7 +8,7 @@ const projects = [
     },
     {
         title: "Still-Open?",
-        description: "A completely front-end solution for finding restaurants open near you with alerts if they close soon.",
+        description: "Find restaurants open near you and recieve alerts if they close soon.",
         technology: "Vanilla JS, Jquery, HTML/CSS",
         picture: "http://via.placeholder.com/340x260",
         url: "https://github.com/emswann/still-open"
