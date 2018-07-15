@@ -110,6 +110,14 @@ body, html {
     color: white
 }
 
+.icons { 
+    transition: all .2s ease-in-out; 
+}
+
+.icons:hover { 
+    transform: scale(1.1); 
+}
+
 .navbar-toggler .navbar-toggler-icon {
     color: white
 }
