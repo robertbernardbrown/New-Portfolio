@@ -1,12 +1,17 @@
 import React, {Component} from "react";
 import AboutIcons from "./AboutIcons/AboutIcons";
-import { Tooltip } from 'reactstrap';
+import { Tooltip } from "reactstrap";
+import smoothScroll from "../../utils/smoothscroll";
 
 class About extends Component {
 
     state = {
         tooltipOpen: false,
         tooltipOpen2: false
+    }
+
+    scrollToPortfolio = () => {
+        smoothScroll.scrollTo("portfolio");
     }
 
     toggle = () => {
@@ -52,7 +57,7 @@ class About extends Component {
                     <img alt="Robert Brown" className="tooltip-img" src="https://upload.wikimedia.org/wikipedia/commons/3/32/Robert_Brown_%28botanist%29.jpg"></img>
                 </Tooltip>
                 <section id="scroll-down-black" className="portfolio-scroll">
-                    <a href="#portfolio"><span></span></a>
+                    <a href="#portfolio"><span onClick={this.scrollToPortfolio}></span></a>
                 </section>
             </div>
         )
