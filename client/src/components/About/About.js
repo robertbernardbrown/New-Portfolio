@@ -23,7 +23,7 @@ class About extends Component {
 
     render(){
         return(
-            <div className="header-div hero" id="about">
+            <div className="header-div hero" id="about" style={{paddingBottom: "0"}}>
                 <div className="container about-me">
                     <h1>Hi there!</h1> 
                     <hr/>
@@ -51,6 +51,9 @@ class About extends Component {
                 <Tooltip placement="top" isOpen={this.state.tooltipOpen2} target="TooltipExample2" toggle={this.toggle2}>
                     <img alt="Robert Brown" className="tooltip-img" src="https://upload.wikimedia.org/wikipedia/commons/3/32/Robert_Brown_%28botanist%29.jpg"></img>
                 </Tooltip>
+                <section id="scroll-down-black" className="portfolio-scroll">
+                    <a href="#portfolio"><span></span></a>
+                </section>
             </div>
         )
     }

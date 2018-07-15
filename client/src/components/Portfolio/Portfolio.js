@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardTitle, CardText, CardImg, CardImgOverlay, CardColumns, Button } from 'reactstrap';
 
 const Portfolio = (props) => (
-    <div className="portfolio header-div" id="portfolio">
+    <div className="portfolio header-div" id="portfolio" style={{paddingTop: "0"}}>
         <h1>Portfolio</h1>
         <CardColumns>
         {props.projects.map((cur, i) => (
