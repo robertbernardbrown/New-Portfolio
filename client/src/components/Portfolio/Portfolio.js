@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardTitle, CardText, CardImg, CardImgOverlay, CardColumns } from 'reactstrap';
+import { Card, CardTitle, CardText, CardImg, CardImgOverlay, CardColumns, Button } from 'reactstrap';
 
 const Portfolio = (props) => (
     <div className="portfolio header-div" id="portfolio">
@@ -16,7 +16,7 @@ const Portfolio = (props) => (
                         <CardImgOverlay>
                             <div className="portfolio-overlay-info">
                                 <CardText>{cur.description}</CardText>
-                                <a href={cur.url} target="_blank" rel="noopener noreferrer"><button className="btn btn-primary">Visit Site</button></a>
+                                <a href={cur.url} target="_blank" rel="noopener noreferrer"><Button size="sm" className="btn btn-primary">Visit Site</Button></a>
                             </div>
                         </CardImgOverlay>
                     </div>
