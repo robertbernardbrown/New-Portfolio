@@ -1,23 +1,18 @@
 body, html {
     height: 100%;
+    width: 100%;
     margin: 0;
+}
+
+.div-container {
+    height: 100%;
+    width: 100%
 }
 
 .site-container {
     height: 100%;
+    width: 100%;
     margin: 0;
-}
-
-.outline-red {
-    border: 2px solid red
-}
-
-.outline-green {
-    border: 2px solid green
-}
-
-#jumbo-div {
-    background-color: transparent;
 }
 
 .container {
@@ -41,6 +36,9 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     position: relative;
     display: flex;
     justify-content: center;
@@ -55,7 +53,13 @@ body, html {
 
 @media (max-width: 576px) {
     .hero {
-        margin-bottom: 80px;
+        margin-bottom: 120px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-image {
+        background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('http://s3.amazonaws.com/medias.photodeck.com/7cf45a8b-88e8-4397-997f-6f695d6a9a63/nyc-620_uxga.jpg') no-repeat center top;
     }
 }
 
@@ -277,6 +281,7 @@ body, html {
     animation: arrow 1.5s infinite;
     box-sizing: border-box;
 }
+
 @-webkit-keyframes arrow {
     0% {
         -webkit-transform: rotate(-45deg) translate(0, 0);
@@ -301,5 +306,20 @@ body, html {
     100% {
         transform: rotate(-45deg) translate(-20px, 20px);
         opacity: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    #scroll-down a {
+        display: none
+    }
+    #scroll-down a span {
+        display: none
+    }
+    #scroll-down-black a {
+        display: none
+    }
+    #scroll-down-black a span {
+        display: none
     }
 }
