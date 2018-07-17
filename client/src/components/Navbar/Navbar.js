@@ -42,16 +42,16 @@ export default class Example extends React.Component {
           <NavbarToggler onClick={this.toggle} color="text-white" />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
+              <NavItem className="ml-auto">
                 <NavLink href="/">Home</NavLink>
               </NavItem>
-              <NavItem>
+              <NavItem className="ml-auto">
                 <NavLink onClick={this.toggle} href="#about">About</NavLink>
               </NavItem>
-              <NavItem>
+              <NavItem className="ml-auto">
                 <NavLink onClick={this.toggle} href="#portfolio">Portfolio</NavLink>
               </NavItem>
-              <NavItem>
+              <NavItem className="ml-auto">
                 <NavLink onClick={this.toggle} href="#contact">Contact</NavLink>
               </NavItem>
             </Nav>

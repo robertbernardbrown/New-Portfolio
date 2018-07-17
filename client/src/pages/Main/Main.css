@@ -55,9 +55,6 @@ body, html {
     .hero {
         margin-bottom: 120px;
     }
-    .hero-image {
-        background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1513590206374-e21cff70d84b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c671783ea3a3a81790c6db5cf60e45a0&auto=format&fit=crop&w=2766&q=80');
-    }
 }
 
 
