@@ -10,9 +10,9 @@ const Portfolio = (props) => (
                 <a href={cur.url} target="_blank" rel="noopener noreferrer">
                     <Card inverse>
                         <CardImg width="100%" src={cur.picture} alt="Card image cap"/>
-                            <CardImgOverlay>
-                                <CardTitle className="portfolio-title">{cur.title}</CardTitle>
-                            </CardImgOverlay>
+                        <CardImgOverlay>
+                            <CardTitle className="portfolio-title">{cur.title}</CardTitle>
+                        </CardImgOverlay>
                         <div className="portfolio-overlay">
                             <CardImgOverlay>
                                 <div className="portfolio-overlay-info">
@@ -22,6 +22,11 @@ const Portfolio = (props) => (
                             </CardImgOverlay>
                         </div>
                     </Card>
+                    {/* <Card body style={{background: cur.background}}>
+                        <CardTitle>{cur.title}</CardTitle>
+                        <CardText>{cur.description}</CardText>
+                        <Button color="secondary">Visit Code</Button>
+                    </Card> */}
                 </a>
             </div>
         ))}

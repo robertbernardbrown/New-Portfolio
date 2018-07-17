@@ -29,7 +29,7 @@ body, html {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://www.fabtechexpo.com/wp-content/uploads/atlanta-skyline-compressor.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1513590206374-e21cff70d84b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c671783ea3a3a81790c6db5cf60e45a0&auto=format&fit=crop&w=2766&q=80");
     width: 100vw;
     height: 100vh;
     background-position: center center;
@@ -63,7 +63,7 @@ body, html {
     }
 }
 
-/* HEADER */
+/*================================ HEADER ================================*/
 #header-container a {
     text-decoration: none;
     color: black;
@@ -86,7 +86,7 @@ body, html {
 }
 
 
-/* FOOTER */
+/*================================ FOOTER ================================*/
 #footer {
     min-height: 100px;
     position: relative;
@@ -102,7 +102,7 @@ body, html {
     transform: translate(-50%, -50%);
 }
 
-/* NAVBAR */
+/*================================ NAVBAR ================================*/
 
 #icon-container {
     width: 180px;
@@ -134,7 +134,7 @@ body, html {
     background: white !important;
 }
 
-/* ABOUT */
+/*================================ ABOUT ================================ */
 
 #about {
     position: relative
@@ -200,7 +200,7 @@ body, html {
     width: 100%
 }
 
-/* PORTFOLIO */
+/*================================ PORTFOLIO ================================*/
 
 .portfolio-title {
     position: absolute;
@@ -210,6 +210,9 @@ body, html {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3));
+    padding: 7px;
+    border-radius: 10px
 }
 
 .portfolio-overlay {
@@ -222,7 +225,7 @@ body, html {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: black;
+    background-color: #4fa9a4;
 }
 
 .portfolio-container:hover .portfolio-overlay {
