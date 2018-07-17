@@ -9,7 +9,7 @@ const Portfolio = (props) => (
             <div className="portfolio-container" key={i}>
                 <a href={cur.url} target="_blank" rel="noopener noreferrer">
                     <Card inverse>
-                        <CardImg width="100%" src={cur.picture} alt="Card image cap"/>
+                        <CardImg width="100%" src={`${cur.picture}`} alt="Card image cap"/>
                         <CardImgOverlay>
                             <CardTitle className="portfolio-title">{cur.title}</CardTitle>
                         </CardImgOverlay>
