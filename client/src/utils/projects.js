@@ -26,14 +26,14 @@ const projects = [
         title: "NYT React Site",
         description: "Fetch archived articles from the NYT API",
         technology: "MongoDB, Express, React, Node, HTML/CSS",
-        picture: "./images/beach-book-min.jpeg",
+        picture: "./images/beach-book-min.jpg",
         url: "https://github.com/robertbernardbrown/NYTreact",
     },
     {
         title: "HackerRank Web-Scraper",
         description: "Scrape the front page of HackerRank",
         technology: "Cheerio, jQuery, HTML/CSS, Express, MongoDB, Mongoose, Node",
-        picture: "./images/beach-castle-min.jpeg",
+        picture: "./images/beach-castle-min.jpg",
         url: "https://github.com/robertbernardbrown/MongoNewsScraper",
     },
     {

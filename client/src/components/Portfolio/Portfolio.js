@@ -17,7 +17,7 @@ const Portfolio = (props) => (
                             <CardImgOverlay>
                                 <div className="portfolio-overlay-info">
                                     <CardText>{cur.description}</CardText>
-                                    <Button size="sm" className="btn btn-primary">Visit Code</Button>
+                                    <Button aria-label="Visit code" aria-labelledby="portfolio" size="sm" className="btn btn-primary">Visit Code</Button>
                                 </div>
                             </CardImgOverlay>
                         </div>

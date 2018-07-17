@@ -27,19 +27,19 @@ export default class Example extends React.Component {
         <Navbar dark expand="md">
           <div id="icon-container">
             <div>
-              <a href="https://www.facebook.com/robertbernardbrown" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon className="icons" size="lg" icon={['fab', 'facebook']} /></a>
+              <a alt="Facebook" href="https://www.facebook.com/robertbernardbrown" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon className="icons" size="lg" icon={['fab', 'facebook']} /></a>
             </div>
             <div>
-              <a href="https://www.linkedin.com/in/robert-bernard-brown/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon className="icons" size="lg" icon={['fab', 'linkedin']} /></a>
+              <a alt="Linkedin" href="https://www.linkedin.com/in/robert-bernard-brown/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon className="icons" size="lg" icon={['fab', 'linkedin']} /></a>
             </div>
             <div>
-              <a href="https://github.com/robertbernardbrown" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon className="icons" size="lg" icon={['fab', 'github']} /></a>
+              <a alt="Github" href="https://github.com/robertbernardbrown" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon className="icons" size="lg" icon={['fab', 'github']} /></a>
             </div>
             <div>
-              <a href="https://www.instagram.com/bob_brown_18/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon className="icons" size="lg" icon={['fab', 'instagram']} /></a>
+              <a alt="Instagram" href="https://www.instagram.com/bob_brown_18/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon className="icons" size="lg" icon={['fab', 'instagram']} /></a>
             </div>
           </div>
-          <NavbarToggler onClick={this.toggle} color="text-white" />
+          <NavbarToggler onClick={this.toggle} color="text-white" aria-label="Expand Menu"/>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem className="ml-auto">
