@@ -22,11 +22,6 @@ const Portfolio = (props) => (
                             </CardImgOverlay>
                         </div>
                     </Card>
-                    {/* <Card body style={{background: cur.background}}>
-                        <CardTitle>{cur.title}</CardTitle>
-                        <CardText>{cur.description}</CardText>
-                        <Button color="secondary">Visit Code</Button>
-                    </Card> */}
                 </a>
             </div>
         ))}
