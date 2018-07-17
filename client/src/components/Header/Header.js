@@ -10,8 +10,7 @@ class Header extends Component {
     
     render() {
         return(
-            <div>
-                <div className="hero-image hero-image-text">
+            <div className="hero-image hero-image-text">
                 <NavbarComp className="navbar"/>
                     <div className="container" id="header-container">
                         <a href="/"><h1 className="header-text text-center">Robert Brown</h1></a>
@@ -19,7 +18,6 @@ class Header extends Component {
                 <section id="scroll-down" className="about-scroll">
                     <a href="#about"><span onClick={this.handleScrollClick}></span></a>
                 </section>
-                </div>
             </div>
         )
     }
