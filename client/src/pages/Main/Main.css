@@ -35,7 +35,6 @@ body, html {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -70,13 +69,37 @@ body, html {
 }
 
 .header-text {
-    font-size: 5em;
-    color: white
+    font-size: 3em;
+    color: white;
+    transition: font-size 1s;
+    margin-top: 125px;
+}
+
+#header-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#header-pic {
+    height: 200px;
+    width: 200px;
+    border: 5px solid white;
+    border-radius: 50%;
+    align-self: center;
+    margin-top: 20px;
+    background-image: url("/images/me-min.png");
+    background-size: cover;
 }
 
 @media (min-width: 576px) {
     .header-div {
         padding: 4rem 2rem;
+    }
+    .header-text {
+        font-size: 5em;
+        color: white;
+        margin-top: 0px;
     }
 }
 
@@ -128,6 +151,10 @@ body, html {
 .navbar .navbar-toggler .icon-bar {
     background: white !important;
 }
+
+/* .navbar-nav {
+    background: rgba(0, 0, 0, 1);
+} */
 
 /*================================ ABOUT ================================ */
 
