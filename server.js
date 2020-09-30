@@ -7,7 +7,6 @@ var http        = require('http');
 var https       = require('https');
 var fs          = require('fs');
 
-// Serve up static assets
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
