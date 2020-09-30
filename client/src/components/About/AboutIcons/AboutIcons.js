@@ -1,31 +1,64 @@
-import React, {Component} from "react";
+import React, { useState, useEffect } from "react";
+import anime from "animejs";
 
-class AboutIcons extends Component {
+const AboutIcons = (props) => {
 
-    state = {
-        left: "left",
-        right: "right",
-    }
+    const left = useState('left');
+    const right = useState('right');
 
-    componentDidMount(){
-        var that = this
-        setTimeout( function(){
-            that.slideIn();
-        }, that.props.wait);
-    }
+    const animationRef = React.useRef(null);
 
-    slideIn = () => {
-        this.setState({
-            left:"list-icon",
-            right:""
+    React.useEffect(() => {
+        animationRef.current = anime({
+          targets: ".el",
+          translateX: 500,
+          delay: function(el, i) {
+            return i * 100;
+          },
+          loop: true,
+          direction: "alternate",
+          easing: "easeInOutSine"
         });
-    }
+      }, []);
 
-    render(){
-        return(
-            <li> <i className={`icon-list-item fa-li fa ${this.state.left} ${this.props.icon}`}></i><div className={`icon-list-item ${this.state.right}`}> {this.props.iconName}</div></li>
-        )
-    }
+    return (
+        <li>
+            <i style={{ left: '-600px' }} className={`icon-list-item fa-li fa el ${left} ${props.icon}`}></i>
+            <div style={{ right: '600px' }} className={`icon-list-item el ${right}`}> {props.iconName}</div>  
+        </li>
+    );
 }
+
+
+// class AboutIcons extends Component {
+
+//     state = {
+//         left: "left",
+//         right: "right",
+//     }
+
+//     componentDidMount(){
+//         var that = this
+//         setTimeout( function(){
+//             that.slideIn();
+//         }, that.props.wait);
+//     }
+
+//     slideIn = () => {
+//         this.setState({
+//             left:"list-icon",
+//             right:""
+//         });
+//     }
+
+//     render(){
+//         return(
+//             <li>
+//                 <i style={{ left: '-600px' }} className={`icon-list-item fa-li fa ${this.state.left} ${this.props.icon}`}></i>
+//                 <div style={{ right: '600px' }} className={`icon-list-item ${this.state.right}`}> {this.props.iconName}</div>
+//             </li>
+//         )
+//     }
+// }
 
 export default AboutIcons;

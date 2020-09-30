@@ -24,7 +24,6 @@ class Main extends Component{
 
     handleScroll = (e) => {
         const aboutHeight = e.target.body.clientHeight <= window.scrollY
-        console.log(aboutHeight);
         if (aboutHeight) {
             this.setState({
                 show: true
