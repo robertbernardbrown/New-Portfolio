@@ -10,21 +10,18 @@ const AboutIcons = (props) => {
 
     React.useEffect(() => {
         animationRef.current = anime({
-          targets: ".el",
-          translateX: 500,
-          delay: function(el, i) {
-            return i * 100;
-          },
+          targets: ".icon-tech-pair",
+          translateX: [-100, 100, 0],
+          delay: anime.stagger(100),
           loop: true,
-          direction: "alternate",
-          easing: "easeInOutSine"
+          easing: "linear"
         });
       }, []);
 
     return (
         <li>
-            <i style={{ left: '-600px' }} className={`icon-list-item fa-li fa el ${left} ${props.icon}`}></i>
-            <div style={{ right: '600px' }} className={`icon-list-item el ${right}`}> {props.iconName}</div>  
+            <i className={`icon-list-item fa-li fa icon-tech-pair ${left} ${props.icon}`}></i>
+            <div className={`icon-list-item ${right} icon-tech-pair`}> {props.iconName}</div>  
         </li>
     );
 }

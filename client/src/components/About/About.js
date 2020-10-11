@@ -42,10 +42,9 @@ class About extends Component {
                     <p>Here are some of my skills:</p>
                     <div id="icon-ul-div">
                         <ul className="fa-ul" id="flexList">
-                            {this.props.show ? this.props.iconList.map((cur, i) => (
+                            {this.props.iconList.map((cur, i) => (
                                 <AboutIcons key={i} wait={i * 300} iconList={this.props.iconList} icon={cur.icon} iconName={cur.iconName}/>
-                            )):
-                            <div></div>
+                            ))
                         }
                         </ul>
                     </div>
